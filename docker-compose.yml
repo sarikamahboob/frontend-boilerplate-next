@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  digicon-harmony_web:
+    container_name: frontend-boilerplate
+    image: sarikamahb/frontend-boilerplate:${TAG}
+    restart: unless-stopped
+    ports:
+      - "6970:3000"
