@@ -24,7 +24,7 @@ jobs:
         uses: docker/setup-buildx-action@v3
 
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/digicon-harmony-dashboard:${GITHUB_REF##*/}
+        run: docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/frontend-boilerplate:${GITHUB_REF##*/}
 
       - name: Docker Push
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/digicon-harmony-dashboard:${GITHUB_REF##*/}
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/frontend-boilerplate:${GITHUB_REF##*/}
