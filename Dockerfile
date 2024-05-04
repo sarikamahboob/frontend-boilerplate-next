@@ -52,6 +52,6 @@ EXPOSE 3000
 
 RUN npx next telemetry disable
 
-ENTRYPOINT ["/app/entrypoint.sh"]
+# ENTRYPOINT ["/app/entrypoint.sh"]
 
 CMD npm run start
