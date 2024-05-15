@@ -8,15 +8,19 @@
     "start": "next start",
     "lint": "next lint",
     "release": "standard-version",
-    "commit": "cz"
+    "commit": "cz",
+    "prepare": "husky install"
   },
   "dependencies": {
+    "husky": "^9.0.11",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
     "standard-version": "^9.5.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
