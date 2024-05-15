@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.5](https://github.com/sarikamahboob/frontend-boilerplate-next/compare/v1.1.4...v1.1.5) (2024-05-15)
+
+
+### Bug Fixes
+
+* dockerfile husky fixed ([9ced94c](https://github.com/sarikamahboob/frontend-boilerplate-next/commit/9ced94c5778b064aa6f816189dd7b48887a6539d))
+
 ### [1.1.4](https://github.com/sarikamahboob/frontend-boilerplate-next/compare/v0.1.1...v1.1.4) (2024-05-15)
 
 
