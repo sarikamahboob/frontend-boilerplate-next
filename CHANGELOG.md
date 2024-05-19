@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/sarikamahboob/frontend-boilerplate-next/compare/v1.2.0...v1.3.0) (2024-05-19)
+
+
+### Features
+
+* text added ([83ad257](https://github.com/sarikamahboob/frontend-boilerplate-next/commit/83ad25715269779a64c9e85954aae4d3ca3bd520))
+
 # [1.2.0](https://github.com/sarikamahboob/frontend-boilerplate-next/compare/v1.1.1...v1.2.0) (2024-05-19)
 
 
