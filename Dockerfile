@@ -9,7 +9,7 @@ WORKDIR /app
 
 COPY package.json package-lock.json ./
 
-# ENV SKIP_HUSKY=1
+ENV SKIP_HUSKY=1
 
 RUN npm ci
 
