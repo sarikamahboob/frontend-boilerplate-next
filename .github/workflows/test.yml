@@ -2,8 +2,7 @@ name: Release and Docker Image CI/CD
 
 on:
   push:
-    branches:
-      - master  # You can update this to your release branch
+    branches: ['main']# You can update this to your release branch
 
 jobs:
   release:
@@ -17,7 +16,7 @@ jobs:
       - id: release  # Capture the release information
         uses: GoogleCloudPlatform/release-please-action@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.HUB_TOKEN }}
           release-type: node
           package-name: standard-version
 
