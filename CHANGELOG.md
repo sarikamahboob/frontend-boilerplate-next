@@ -1,11 +1,26 @@
-# [1.3.0](https://github.com/sarikamahboob/frontend-boilerplate-next/compare/v1.2.0...v1.3.0) (2024-05-19)
+# Changelog
+
+## [1.4.0](https://github.com/sarikamahboob/frontend-boilerplate-next/compare/v1.3.0...v1.4.0) (2024-05-26)
+
+
+### Features
+
+* workflow file modified ([2d2581e](https://github.com/sarikamahboob/frontend-boilerplate-next/commit/2d2581ec2dcad745e6f935445142c3b3257abccd))
+
+
+### Bug Fixes
+
+* workflow file fixed for the standard version ([2743a82](https://github.com/sarikamahboob/frontend-boilerplate-next/commit/2743a82e1aa39c1bbd3cf068938d448ab174f069))
+* workflow file fixed for the standard version ([f6a1264](https://github.com/sarikamahboob/frontend-boilerplate-next/commit/f6a126443f4350eba3da53e3475df80b7424fc08))
+
+## [1.3.0](https://github.com/sarikamahboob/frontend-boilerplate-next/compare/v1.2.0...v1.3.0) (2024-05-19)
 
 
 ### Features
 
 * text added ([83ad257](https://github.com/sarikamahboob/frontend-boilerplate-next/commit/83ad25715269779a64c9e85954aae4d3ca3bd520))
 
-# [1.2.0](https://github.com/sarikamahboob/frontend-boilerplate-next/compare/v1.1.1...v1.2.0) (2024-05-19)
+## [1.2.0](https://github.com/sarikamahboob/frontend-boilerplate-next/compare/v1.1.1...v1.2.0) (2024-05-19)
 
 
 ### Bug Fixes
