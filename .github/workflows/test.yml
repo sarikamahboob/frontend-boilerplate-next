@@ -10,6 +10,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Set up Debug Logs
+        run: echo "::set-env name=ACTIONS_RUNNER_DEBUG::true"
+
       - name: Branch name (Informational)
         run: echo Running on branch ${GITHUB_REF_NAME}
 
