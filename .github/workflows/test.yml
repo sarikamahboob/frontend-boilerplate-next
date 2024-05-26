@@ -25,6 +25,11 @@ jobs:
         with:
           node-version: "lts/*"
 
+      - name: Set GitHub user
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
       - name: Install dependencies (for release script, if needed)
         run: npm ci
         if: ${{ steps.release.outputs.release_created }}
