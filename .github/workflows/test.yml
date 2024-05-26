@@ -10,16 +10,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Debug Logs
-        run: echo "::set-env name=ACTIONS_RUNNER_DEBUG::true"
-
       - name: Branch name (Informational)
         run: echo Running on branch ${GITHUB_REF_NAME}
 
       - id: release  # Capture the release information
         uses: GoogleCloudPlatform/release-please-action@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.HUB_TOKEN }}
           release-type: node
           package-name: standard-version
 
