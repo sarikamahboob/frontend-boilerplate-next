@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.3](https://github.com/sarikamahboob/frontend-boilerplate-next/compare/v1.4.2...v1.4.3) (2024-05-26)
+
+
+### Bug Fixes
+
+* workflow issue fixed ([831084f](https://github.com/sarikamahboob/frontend-boilerplate-next/commit/831084fbef7f176fe5153ce4c34ee371f4d4ee86))
+
 ## [1.4.2](https://github.com/sarikamahboob/frontend-boilerplate-next/compare/v1.4.1...v1.4.2) (2024-05-26)
 
 
