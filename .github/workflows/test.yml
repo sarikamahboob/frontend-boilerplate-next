@@ -2,7 +2,7 @@ name: Release and Docker Image CI/CD
 
 on:
   push:
-    branches: ['main']# You can update this to your release branch
+    branches: ['main']  # Update this to your release branch
 
 jobs:
   release:
@@ -16,7 +16,7 @@ jobs:
       - id: release  # Capture the release information
         uses: GoogleCloudPlatform/release-please-action@v3
         with:
-          token: ${{ secrets.HUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}  # Likely a typo, should be GITHUB_TOKEN
           release-type: node
           package-name: standard-version
 
@@ -33,6 +33,17 @@ jobs:
         if: ${{ steps.release.outputs.release_created }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Setup Node.js (for Docker build)
+        uses: actions/setup-node@v3
+        with:
+          node-version: "lts/*"
+
+      - name: Install dependencies
+        run: npm clean-install
+
+      - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
+        run: npm audit signatures
 
       - name: Build the Docker image
         run: docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/frontend-boilerplate:${{ steps.release.outputs.tag || github.sha }}  # Use release tag or commit SHA
@@ -52,4 +63,3 @@ jobs:
       - name: Docker Push
         run: docker push ${{ secrets.DOCKER_USERNAME }}/frontend-boilerplate:${{ steps.release.outputs.tag || github.sha }}
         if: ${{ steps.release.outputs.release_created }}
-
