@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.6.0 (2024-06-02)
+
+
+### Features
+
+* removed images ([0af6a12](https://github.com/sarikamahboob/frontend-boilerplate-next/commit/0af6a1284c55bc469efabee5921fb4de6c7ce02c))
+
 ### 1.5.1 (2024-06-02)
 
 ## 1.5.0 (2024-06-02)
