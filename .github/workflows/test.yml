@@ -133,10 +133,10 @@ jobs:
       - name: Branch name 
         run: echo Running on branch ${GITHUB_REF_NAME}
 
-      - name: Set GitHub user
+      - name: Configure committer
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions"
+          git config user.email "<41898282+github-actions[bot]@users.noreply.github.com>"
 
       - name: Bump version
         uses: qzb/standard-version-action@v1.0.5
