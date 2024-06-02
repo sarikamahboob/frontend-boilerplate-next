@@ -144,8 +144,8 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@v0.6.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${GITHUB_REF_NAME}
+          github_token: ${{ secrets.HUB_TOKEN }}
+          branch: ${{ github.ref }}
           tags: true
 
       - name: Login to Docker Hub
