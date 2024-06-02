@@ -1,5 +1,14 @@
 # Changelog
 
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## 1.5.0 (2024-06-02)
+
+
+### Features
+
+* workflow file updated 10 ([1292f8b](https://github.com/sarikamahboob/frontend-boilerplate-next/commit/1292f8b3b3ba1a42be48cc5e8bdbb0e5db3c5f61))
+
 ## [1.4.4](https://github.com/sarikamahboob/frontend-boilerplate-next/compare/v1.4.3...v1.4.4) (2024-05-26)
 
 
